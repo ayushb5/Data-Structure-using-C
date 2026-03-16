@@ -70,13 +70,14 @@ int main()
                 temp = nextnode = head;
                 while (nextnode != 0)
                 {
-                    nextnode = nextnode->next;
+                    nextnode = temp->next;
                     temp->next = prevnode;
                     prevnode = temp;
                     temp = nextnode;
                 }
                 head = prevnode;
 
+                printf("\nReversed Linked List: ");
                 temp = head;
                 while (temp != 0)
                 {
@@ -87,7 +88,6 @@ int main()
             break;
 
         case 4:
-            count = 0;
             temp = head;
             if (head == 0)
             {
@@ -95,7 +95,7 @@ int main()
             }
             else
             {
-                printf("\nLinked List:");
+                printf("\nLinked List: ");
                 while (temp != 0)
                 {
                     printf("%d ", temp->data);
