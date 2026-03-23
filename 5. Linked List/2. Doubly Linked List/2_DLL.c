@@ -29,7 +29,7 @@ int main()
             if (head == 0)
             {
                 head = temp = newnode;
-                newnode->prev = head;
+                newnode->prev = 0;
             }
             else
             {
