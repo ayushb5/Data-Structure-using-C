@@ -1,4 +1,4 @@
-// Implementation of Circular Linked List
+// Implementation of Circular Linked List (CLL)
 #include <stdio.h>
 #include <stdlib.h>
 
